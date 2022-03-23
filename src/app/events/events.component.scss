@@ -1,0 +1,27 @@
+.outer-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  border: 10px solid blue;
+}
+
+.img-container,
+.img-container img {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+
+}
+
+.card {
+  width: 85%
+}
+
+.img-responsive {
+  padding-left: 30%;
+  height: 30vh;
+}
+
+.event-row {
+  width: 100%
+}

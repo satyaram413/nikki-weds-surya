@@ -1,0 +1,124 @@
+@import '../../styles-variables';
+@import '//fonts.googleapis.com/css?family=Bangers';
+
+.countdown {
+  color: white;
+  display: flex;
+  position: absolute;
+  top: 2vw;
+  color: #000000;
+  font-size: 8vw;
+}
+
+.minutes,
+.hours,
+.seconds {
+  padding-left: 10%
+}
+
+.days::after {
+  position: absolute;
+  height: 10px;
+  content: "Days";
+  font-weight: bold;
+  height: inherit;
+  left: 2%;
+  top: 70%;
+  font-size: 43%;
+  box-sizing: border-box;
+
+}
+
+.hours::after {
+  position: absolute;
+  height: 10px;
+  content: "Hours";
+  font-weight: bold;
+  height: inherit;
+  left: 34%;
+  top: 70%;
+  font-size: 43%;
+  box-sizing: border-box;
+
+}
+
+.minutes::after {
+  position: absolute;
+  height: 10px;
+  content: "Min";
+  font-weight: bold;
+  height: inherit;
+  left: 75%;
+  top: 70%;
+  font-size: 43%;
+  box-sizing: border-box;
+
+}
+
+.seconds::after {
+  position: absolute;
+  height: 10px;
+  content: "Sec";
+  font-weight: bold;
+  height: inherit;
+  left: 109%;
+  top: 70%;
+  font-size: 43%;
+  box-sizing: border-box;
+
+}
+
+.date-location {
+  position: relative;
+  top: 64vh;
+  justify-content: center !important;
+  display: flex;
+  position: fixed;
+  color: white;
+  font-family: monospace;
+}
+
+
+.date {
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: absolute;
+  font-size: 8vw;
+  color: #020202;
+}
+
+
+
+.bg-name {
+  position: absolute;
+  top: 56vh;
+  display: flex;
+}
+
+.bname {
+  font-size: 5vw;
+  font-family: Bunch Blossoms Personal Use;
+  width: max-content;
+  color: white;
+
+  .fa {
+    color: #E90606;
+    margin: 0 3px;
+    font-size: 4vw;
+    animation: pound .35s infinite alternate;
+    -webkit-animation: pound .35s infinite alternate;
+  }
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  // background-size: 1349px 647px;
+  height: 100vh;
+  background-image: url("../../assets/surya\ nikki\ 2.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  width: 100%;
+}

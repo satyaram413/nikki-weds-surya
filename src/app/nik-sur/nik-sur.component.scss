@@ -1,0 +1,12 @@
+.wrapper {
+  top: 50%;
+  left: 50%;
+  height: 100vh
+}
+
+img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}

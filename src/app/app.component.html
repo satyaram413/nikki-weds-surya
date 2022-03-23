@@ -1,0 +1,73 @@
+<!-- <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a
+      class="nav-link active"
+      routerLink="/countdown-timer"
+      routerLinkActive="activebutton"
+    >
+      ⏱ Countdown</a
+    >
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/nik-sur" routerLinkActive="activebutton">
+      💑 Us</a
+    >
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/events" routerLinkActive="activebutton"
+      >🎊 Event 🎊</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      href="#"
+      tabindex="-1"
+      aria-disabled="true"
+      routerLinkActive="activebutton"
+      >Disabled</a
+    >
+  </li>
+</ul> -->
+<nav class="navbar navbar-expand-lg navbar-default navbar-static-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" [ngClass]="{ show: navbarOpen }">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link active py-0"
+            routerLink="/countdown-timer"
+            routerLinkActive="activebutton"
+          >
+            ⏱ Countdown</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link py-0"
+            routerLink="/nik-sur"
+            routerLinkActive="activebutton"
+          >
+            💑 Us</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link py-0"
+            routerLink="/events"
+            routerLinkActive="activebutton"
+            >🎊 Event 🎊</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<span>
+  Made with <i class="fa fa-heartbeat" aria-hidden="true"></i> in Nikhitha
+</span>

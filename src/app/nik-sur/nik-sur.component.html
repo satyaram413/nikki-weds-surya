@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div class="swinger-container">
+    <ng-container
+      *ngFor="
+        let a of [1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7];
+        let i = index
+      "
+    >
+      <img src="assets/img/{{ a }}.png" style="width: 1100px; top: 4vh" />
+      <span
+        (mouseover)="hoverData(i)"
+        id="{{ i }}"
+        style="z-index: 999; position: absolute; top: 0; bottom: 0"
+        style.left="{{ (100 / 20) * i }}%"
+        style.width="{{ 100 }}px"
+        style.top="{{ 20 }}px"
+      ></span>
+    </ng-container>
+  </div>
+</div>
